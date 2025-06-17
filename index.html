@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>读取接口示例</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>Huey Community</h1>
+      <img src="./assets/WechatIMG12.jpg" alt="暂无" />
+      <h3>待开发中......</h3>
+    </div>
+    <script>
+      fetch("http://localhost:3000/")
+        .then((response) => response.json())
+        .then((result) => console.log(result));
+    </script>
+  </body>
+</html>
